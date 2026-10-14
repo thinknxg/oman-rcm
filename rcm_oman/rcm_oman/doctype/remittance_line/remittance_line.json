@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-14 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "insurance_claim",
+  "claim_coverage",
+  "external_claim_id",
+  "insurance_coverage",
+  "patient",
+  "column_break_1",
+  "claimed_amount",
+  "paid_amount",
+  "denied_amount",
+  "denial_code",
+  "denial_reason",
+  "match_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "insurance_claim",
+   "fieldtype": "Link",
+   "label": "Insurance Claim",
+   "options": "Insurance Claim",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "claim_coverage",
+   "fieldtype": "Data",
+   "label": "Claim Line (row id)"
+  },
+  {
+   "fieldname": "external_claim_id",
+   "fieldtype": "Data",
+   "label": "External Claim ID",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "insurance_coverage",
+   "fieldtype": "Link",
+   "label": "Insurance Coverage",
+   "options": "Patient Insurance Coverage"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "claimed_amount",
+   "fieldtype": "Currency",
+   "label": "Claimed",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "denied_amount",
+   "fieldtype": "Currency",
+   "label": "Denied",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "denial_code",
+   "fieldtype": "Link",
+   "label": "Denial Code",
+   "options": "Denial Code"
+  },
+  {
+   "fieldname": "denial_reason",
+   "fieldtype": "Small Text",
+   "label": "Denial Reason"
+  },
+  {
+   "fieldname": "match_status",
+   "fieldtype": "Select",
+   "label": "Match",
+   "options": "\nMatched\nUnmatched\nApplied",
+   "read_only": 1,
+   "in_list_view": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-14 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "RCM Oman",
+ "name": "Remittance Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "istable": 1,
+ "editable_grid": 1
+}

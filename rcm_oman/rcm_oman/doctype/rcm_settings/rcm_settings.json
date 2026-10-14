@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-14 08:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "require_eligibility_before_checkin",
+  "eligibility_valid_hours",
+  "column_break_1",
+  "unverified_override_role",
+  "section_break_2",
+  "auto_create_prior_auth",
+  "auto_send_prior_auth",
+  "column_break_2",
+  "default_auth_validity_days",
+  "section_break_3",
+  "block_claim_on_validation_error",
+  "require_diagnosis_code",
+  "require_practitioner_licence",
+  "column_break_3",
+  "default_resubmission_days",
+  "denial_case_due_days",
+  "default_diagnosis_code_system"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Point of Care"
+  },
+  {
+   "fieldname": "require_eligibility_before_checkin",
+   "fieldtype": "Check",
+   "label": "Require Eligibility Before Check-in",
+   "default": "1",
+   "description": "Block appointment check-in for insured visits until the policy is verified or overridden."
+  },
+  {
+   "fieldname": "eligibility_valid_hours",
+   "fieldtype": "Int",
+   "label": "Eligibility Valid For (Hours)",
+   "default": "24"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unverified_override_role",
+   "fieldtype": "Link",
+   "label": "Role Allowed to Override Unverified Eligibility",
+   "options": "Role",
+   "default": "RCM Manager"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Authorisation"
+  },
+  {
+   "fieldname": "auto_create_prior_auth",
+   "fieldtype": "Check",
+   "label": "Auto-create Prior Authorization for Manual-approval Coverage",
+   "default": "1"
+  },
+  {
+   "fieldname": "auto_send_prior_auth",
+   "fieldtype": "Check",
+   "label": "Auto-send Prior Authorization on Dhamani Channel",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_auth_validity_days",
+   "fieldtype": "Int",
+   "label": "Default Authorisation Validity (Days)",
+   "default": "30"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Claims"
+  },
+  {
+   "fieldname": "block_claim_on_validation_error",
+   "fieldtype": "Check",
+   "label": "Block Claim Submission on Validation Errors",
+   "default": "1"
+  },
+  {
+   "fieldname": "require_diagnosis_code",
+   "fieldtype": "Check",
+   "label": "Require Diagnosis Code on Claim Lines",
+   "default": "1"
+  },
+  {
+   "fieldname": "require_practitioner_licence",
+   "fieldtype": "Check",
+   "label": "Require Valid Practitioner Licence",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_resubmission_days",
+   "fieldtype": "Int",
+   "label": "Default Resubmission Window (Days)",
+   "default": "30"
+  },
+  {
+   "fieldname": "denial_case_due_days",
+   "fieldtype": "Int",
+   "label": "Denial Case Due In (Days)",
+   "default": "14"
+  },
+  {
+   "fieldname": "default_diagnosis_code_system",
+   "fieldtype": "Link",
+   "label": "Default Diagnosis Code System",
+   "options": "Code System"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-14 08:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "RCM Oman",
+ "name": "RCM Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "RCM Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "issingle": 1
+}
